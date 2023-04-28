@@ -1,0 +1,27 @@
+from bot import Bot
+import argparse
+
+
+def get_my_followers(config):
+    username = config.username
+    password = config.password
+    b = Bot()
+
+    b.setUp()
+    b.go_to_page("https://www.instagram.com/accounts/login/")
+    b.login(username, password)
+
+    b.get_my_followers(username)
+
+
+if __name__ == '__main__':
+
+    parser = argparse.ArgumentParser()
+
+    # input parameters
+    parser.add_argument('--username', type=str)
+    parser.add_argument('--password', type=str)
+
+    config = parser.parse_args()
+
+    get_my_followers(config)
