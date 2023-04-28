@@ -4,6 +4,11 @@ Visualization of the instagram network using Login credentials of the user's ins
 
 GitHub repository Link: https://github.com/RahulGopathi/Instagram-Network-Visualization.git
 
+### Installing Chrome Webdriver
+
+- Install the chrome webdriver according to your chrome version from [here](https://chromedriver.chromium.org/downloads).
+- You can find you chrom version from Menu > Help > About Google Chrome
+
 ### Procedure for visualizing Instagram network
 
 - Install [python](https://www.python.org/downloads/) in your environment and clone the reporsitory using following command
@@ -82,3 +87,8 @@ python local_analysis.py --username your_IG_username\
 ```
 
 - The above command will give the statistics about Betweenness centrality, Closeness centrality, Degree centrality and other statistics.
+
+### Team Members
+
+- Rahul Gopathi (B20AI009)
+- Naikawadi Shivaprasad (B20AI057)
